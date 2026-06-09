@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.hw.dpf.information"
-        minSdk 10
+        minSdk 1
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -18,14 +18,12 @@ android {
 
     buildTypes {
         release {
-            optimization {
-                enable false
-            }
+            minifyEnabled false
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
